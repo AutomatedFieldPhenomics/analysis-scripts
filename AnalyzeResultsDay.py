@@ -14,7 +14,7 @@ def options():
     parser = argparse.ArgumentParser(description='Graph plant information over a single day')
     parser.add_argument('-d', '--directory', help='Path to source directory', required=True)
     parser.add_argument('-o', '--outFile', help='Output file', default='areaVsTime.png', required=False)
-    parser.add_argument('-t', '--date', help='Date data was collected', required=False)
+    parser.add_argument('-t', '--date', help='Date data was collected', required=True)
     args = parser.parse_args()
     return args
 
